@@ -14,4 +14,5 @@ workbook=demo.book
 demo.save()
 
 #
-
+import CPU
+CPU.ConvertData('05/05','FileThongtinnhanvien.xlsx','Bang-cham-cong-[5-2020].xlsx','vuiqua')
