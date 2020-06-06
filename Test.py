@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from Excel import ImportExcel
+from Excel_usable import ImportExcel
 data=pd.DataFrame(ImportExcel("Bang-cham-cong-[5-2020].xlsx"))
 # print(data.iloc[[:,[1,data.iloc]])
 # da=data.where(data.iloc[:,7]=='x')

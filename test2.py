@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from Excel import *
+from Excel_usable import *
 import TableConfig
 day='05/05'
 data=pd.DataFrame(ImportExcel("Bang-cham-cong-[5-2020].xlsx"))
@@ -52,6 +52,6 @@ for i in range(len(l)):
 
     check=True
 datafr=datafr[['STT','Tên','Vị trí','Công trình','Ngày sinh','Sđt','Tổng quân']]
-ExportExcel('dd',datafr)
+ExportExcel('metmoisss','gg',datafr)
 # df1.append(df2, ignore_index = True)
 # K=data.loc['DH0158'].iloc[id]

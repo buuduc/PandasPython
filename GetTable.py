@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from Excel import ImportExcel
+from Excel_usable import ImportExcel
 
 
 def GetColumn(data, row, value):

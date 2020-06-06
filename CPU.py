@@ -6,7 +6,7 @@
 # data=pd.DataFrame(ImportExcel("Bang-cham-cong-[5-2020].xlsx"))
 # index=TableConfig.GetColumn(data,0,day)
 # l=data.iloc[:,index]
-from Excel import *
+from Excel_usable import *
 import TableConfig
 def ConvertData(day,source,data,nameExcel):
     # day='05/05'
@@ -58,7 +58,8 @@ def ConvertData(day,source,data,nameExcel):
 
         check=True
     datafr=datafr[['STT','Tên','Vị trí','Công trình','Ngày sinh','Sđt','Tổng quân']]
-    ExportExcel(nameExcel,datafr)
+    D = 'ngay' + day[0:2] + 'thang' + day[3:5]
+    ExportExcel(nameExcel,D,datafr)
 
 
 
