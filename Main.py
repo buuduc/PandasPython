@@ -15,6 +15,6 @@ import pandas as pd
 
 #
 import CPU
-day='08/05'
-D='ngay'+day[0:2]+'thang'+day[3:5]
-CPU.ConvertData(day,'D:/PandasPython/FileThongtinnhanvien.xlsx','D:/PandasPython/Bang-cham-cong-[5-2020].xlsx',"CCCCCCCCCCCC")
+day='12/06'
+D='ngay'+day[0:2]+'-'+day[3:5]
+CPU.ConvertData('12/06','FileThongtinnhanvien.xlsx','Bang-cham-cong-[6-2020].xlsx',"ngay12.xlsx")

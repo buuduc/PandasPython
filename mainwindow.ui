@@ -7,24 +7,27 @@
     <x>0</x>
     <y>0</y>
     <width>362</width>
-    <height>194</height>
+    <height>203</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Cham Cong Doctorhouse</string>
+   <string>Chấm Công Doctorhouse</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>60</y>
+      <y>80</y>
       <width>191</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
      <string>Chọn File đính kèm</string>
+    </property>
+    <property name="setColor" stdset="0">
+     <string>QPalette::Window, Qt::red</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
@@ -44,7 +47,7 @@
     <property name="geometry">
      <rect>
       <x>240</x>
-      <y>60</y>
+      <y>80</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -62,15 +65,26 @@
       <height>20</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <stylestrategy>NoAntialias</stylestrategy>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
     <property name="text">
      <string>Nguồn thông tin nhân viên</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
    </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>90</y>
+      <x>30</x>
+      <y>100</y>
       <width>161</width>
       <height>31</height>
      </rect>
@@ -97,7 +111,7 @@
     <property name="geometry">
      <rect>
       <x>60</x>
-      <y>130</y>
+      <y>140</y>
       <width>101</width>
       <height>41</height>
      </rect>
@@ -118,7 +132,7 @@
     <property name="geometry">
      <rect>
       <x>170</x>
-      <y>130</y>
+      <y>140</y>
       <width>101</width>
       <height>41</height>
      </rect>
@@ -138,8 +152,8 @@
    <widget class="QLineEdit" name="lineEdit_3">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>100</y>
+      <x>160</x>
+      <y>110</y>
       <width>113</width>
       <height>20</height>
      </rect>
@@ -148,9 +162,44 @@
      <string>dd/mm</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>211</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Chọn file lưu thông tin nhân viên:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>60</y>
+      <width>211</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Chọn file lưu dữ liệu chấm công:</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <tabstops>
+  <tabstop>lineEdit_2</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>lineEdit</tabstop>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>lineEdit_3</tabstop>
+  <tabstop>pushButton_3</tabstop>
+  <tabstop>pushButton_4</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

@@ -10,7 +10,7 @@ def ImportExcel(Path):
 
 def ExportExcel(Name,SheetName,Data):
     # try:
-    demo = pd.ExcelWriter(Name+'.xlsx', engine='xlsxwriter')
+    demo = pd.ExcelWriter(Name, engine='xlsxwriter')
     Data.to_excel(demo, sheet_name=SheetName)
     # workbook = demo.book
     # format = workbook.add_format()

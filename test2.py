@@ -9,7 +9,8 @@ id=TableConfig.GetColumn(data,0,day)
 # l=data.iloc[:,index]
 ThongTin.columns=ThongTin.iloc[0]
 k=ThongTin.iloc[1:len(ThongTin),2]
-
+print(np.where(data.iloc[0, :].values == 'đasds'))
+a=np.where(data.iloc[0, :].values == 'đasds')
 
 l=list(set(k))
 # l=['Phòng Kế Toán', 'CÔNG TY TNHH KỸ THUẬT THƯƠNG MẠI VÀ DỊCH VỤ DOCTOR HOUSE', 'Công trình xưởng Ricons Giai Đoạn 2', 'Phòng CCM', 'Công trình xưởng BW Bàu Bàng - Bình Dương', 'Công trình Brotex - Tây Ninh', 'Công trình WATERBAY - HCM', 'Công trình Paiho - HCM', 'Giám Đốc', 'Phòng Vật Tư Thiết Bị', 'Công trình Avani - Vũng Tàu', 'Phòng Kỹ Thuật', 'Công trình Apec Wynham Phú Yên', 'Công trình SwanBay Nhơn Trạch', 'Lee House', 'Công trình', 'Công trình Swan Park - Nhơn Trạch', 'Công trình VINCITY - Gia Lâm', 'Phòng Tổng Hợp', 'Công trình AQUABAY - Hưng Yên', 'Công trình Đại Quang Minh - HCM', 'Phòng Quản Lý Tài Sản', 'Công trình Worldon - Củ Chi', 'Mars House']
@@ -52,6 +53,6 @@ for i in range(len(l)):
 
     check=True
 datafr=datafr[['STT','Tên','Vị trí','Công trình','Ngày sinh','Sđt','Tổng quân']]
-ExportExcel('metmoisss','gg',datafr)
+ExportExcel('metmoisss.xlsx','gg',datafr)
 # df1.append(df2, ignore_index = True)
 # K=data.loc['DH0158'].iloc[id]

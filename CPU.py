@@ -15,11 +15,9 @@ def ConvertData(day,source,data,nameExcel):
     id=TableConfig.GetColumn(data,0,day)
     # l=data.iloc[:,index]
     ThongTin.columns=ThongTin.iloc[0]
-    k=ThongTin.iloc[1:len(ThongTin),2]
-
+    k=ThongTin.iloc[1:len(ThongTin),3]
 
     l=list(set(k))
-
 
     # for i in l:
     # for i in range(len(data)):
@@ -35,7 +33,7 @@ def ConvertData(day,source,data,nameExcel):
     stt=0
     for i in range(len(l)):
         sodem = 0
-        kk=ThongTin.where(ThongTin.iloc[1:len(data),2]==l[i]).dropna()
+        kk=ThongTin.where(ThongTin.iloc[1:len(data),3]==l[i]).dropna()
         for j in range(len(kk)):
             if len(data[data.index==kk.index[j]])>0:
 
@@ -57,8 +55,8 @@ def ConvertData(day,source,data,nameExcel):
 
 
         check=True
-    datafr=datafr[['STT','Tên','Vị trí','Công trình','Ngày sinh','Sđt','Tổng quân']]
-    D = 'ngay' + day[0:2] + 'thang' + day[3:5]
+    datafr=datafr[['STT','Họ Tên','Phòng Ban','Vị trí','Công trình','Ngày sinh','Sđt','Tổng quân']]
+    D = 'Ngày ' + day[0:2] + '-' + day[3:5]
     ExportExcel(nameExcel,D,datafr)
 
 
