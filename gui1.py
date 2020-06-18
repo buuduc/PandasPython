@@ -69,12 +69,21 @@ class MainWindow(QtWidgets.QMainWindow):
                 json.dump(data, f,ensure_ascii= False)
             try:
                 CPU.ConvertData(self.daylable.text(), self.EditDataSource.text(), self.EditFileName.text(), fname[0])
+
             except:
                 print("loi roi")
                 msg = QtWidgets.QMessageBox()
                 msg.setText("Dữ liệu nhập vào không đúng")
                 msg.setWindowTitle("Lỗi!")
                 msg.setIcon(QtWidgets.QMessageBox.Critical)
+                # msg.setWindowIcon(QtWidgets.QMessageBox.Critical)
+                msg.show()
+                msg.exec_()
+            else:
+                msg = QtWidgets.QMessageBox()
+                msg.setText("Xuất file thành công !")
+                msg.setWindowTitle("Thành công!")
+                msg.setIcon(QtWidgets.QMessageBox.Information)
                 # msg.setWindowIcon(QtWidgets.QMessageBox.Critical)
                 msg.show()
                 msg.exec_()
